@@ -174,11 +174,11 @@ useEffect(() => {
     <div className='container'>
        <header style={isDark ? {backgroundColor:'white'} : {}}>
           <div className="image-wrapper">
-            <img  src={ !isDark ? logo : logowhite}></img>
+            <img  src={ !isDark ? logo : logowhite} alt="logo"></img>
           </div>
 
           <div className="sunlogo" style={isDark ? {backgroundColor:'hsl(0, 0.00%, 92.90%)'}:{}}>
-            <img onClick={handleTheme} src={!isDark ? sunlogo : moon}></img>
+            <img onClick={handleTheme} src={!isDark ? sunlogo : moon} alt="logo"></img>
           </div>
        </header>
 
