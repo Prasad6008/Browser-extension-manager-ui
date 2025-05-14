@@ -1,0 +1,452 @@
+body
+{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: Regular;
+}
+
+@font-face {
+  font-family: Bold;
+  src: url('./fonts/static/NotoSans-Bold.ttf');
+}
+@font-face {
+  font-family:Medium;
+  src: url('./fonts/static/NotoSans-Medium.ttf');
+}
+@font-face {
+  font-family: Regular;
+  src: url('./fonts/static/NotoSans-Regular.ttf');
+}
+
+body,html 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.container 
+{
+  width: 55vw;
+  height: 90vh;
+  margin: 0px 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+header
+{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 10px;
+  max-height: 38px;
+  background-color: hsl(226, 25%, 17%);
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+header div:nth-child(1)
+{
+  flex: 1;
+}
+
+.image-wrapper
+{
+  display: flex;
+}
+
+.image-wrapper img 
+{
+  width:160px;
+}
+
+.sunlogo 
+{
+  padding: 10px;
+  background-color: hsl(225, 23%, 24%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sunlogo:focus , .sunlogo:hover
+{
+  outline: 2px solid hsl(3, 71%, 56%);
+  outline-offset: 1px;
+}
+
+/* Navigation */
+nav 
+{
+  flex: 1;
+
+  display: flex;
+  align-items:center;
+  font-family: Bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+nav div:nth-child(1)
+{
+  flex: 3;
+  font-size: 30px;
+}
+
+nav div:nth-child(2)
+{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+nav div:nth-child(2) .navi_dark
+{
+  background-color: hsla(226, 11%, 37%, 0.5);
+  color: hsl(0, 0%, 93%);
+  padding: 7px 15px;
+  border-radius: 17px;
+  border:1px solid hsl(226, 11%, 37%);
+  margin: 0px 5px;
+}
+/* 
+nav div:nth-child(2) button:hover {
+  background-color: hsl(3, 86%, 64%);
+  color: hsl(227, 75%, 14%);
+} */
+
+nav div:nth-child(2) .navi-dark:hover , nav div:nth-child(2) .navi_dark:focus
+{
+  outline: 2px solid hsl(3, 71%, 56%);
+  outline-offset: 1px;
+}
+
+
+section
+{
+  flex: 8;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+section div 
+{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+
+.content 
+{
+  border:1px solid hsl(226, 11%, 37%);
+  padding: 10px  ;
+  background-color: hsl(226, 25%, 17%);
+  color: hsl(0, 0%, 93%);
+  font-family: Regular;
+}
+
+
+.d1 
+{
+  display: flex;
+  font-size: 10px;
+  height: 50%;
+  font-family: Regular;
+}
+
+.d1 div:nth-child(1)
+{
+  flex: 1;
+}
+.d1 div:nth-child(2)
+{
+  flex: 4;
+  padding:0px 0px 0px 10px;
+}
+
+.image 
+{
+  width: 45px;
+}
+
+.content_logo 
+{
+  display: flex;
+  align-items:flex-start;
+  justify-content: left;
+}
+
+
+.content_des h2
+{
+  margin: 0;
+}
+
+.content_des p
+{
+  margin-top:5px ;
+  color: hsl(0, 0%, 78%);
+  font-size: 10px;
+}
+
+.d2 
+{
+  display: flex;
+  height: 50%;
+  padding-top: 5px;
+}
+.d2 div
+{
+  display: flex;
+  align-items: center;
+}
+
+.d2 div:nth-child(1)
+{
+  justify-content: left;
+  align-items: flex-end;
+}
+.d2 div:nth-child(2)
+{
+  justify-content:right;
+  align-items: flex-end;
+  padding-bottom: 1px;
+}
+
+.remove_btn
+{
+  border:1px solid hsl(226, 11%, 37%);
+  padding:5px 10px;
+  border-radius: 20px;
+  background-color: hsl(226, 25%, 17%);
+  color: hsl(0, 0%, 93%);
+  font-size: 10px;
+}
+
+.remove_btn:focus 
+{
+  outline: 2px solid hsl(3, 71%, 56%);
+  outline-offset: 1px;
+  border-radius: 34px;
+  border:1px solid hsl(227, 75%, 14%);
+}
+
+
+/* Toggle Button */
+
+/* Container for the toggle */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 17px;
+}
+
+/* Hide the default checkbox */
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-switch:active
+{
+  outline: 2px solid hsl(3, 71%, 56%);
+  outline-offset: 2px;
+  border-radius: 34px;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:hsl(226, 11%, 37%);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+/* Circle inside the slider */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  top: 1.5px;
+  left: 2px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* When checkbox is checked */
+.toggle-switch input:checked + .slider {
+  background-color:hsl(3, 71%, 56%);
+}
+
+/* Move the circle to the right */
+.toggle-switch input:checked + .slider::before {
+  transform: translateX(19px);
+}
+
+
+/* Theme */
+.button-light 
+{
+  border:1px solid hsl(226, 11%, 37%);
+  padding:5px 10px;
+  border-radius: 20px;
+  background-color: hsl(226, 25%, 17%,0);
+  color: hsl(226, 25%, 17%);
+  font-size: 10px;
+}
+
+.button-light:hover 
+{
+  background-color:hsl(3, 71%, 56%);
+  color: white;
+  border:1px solid hsl(3, 71%, 56%);
+}
+
+/*  */
+
+.navi_light 
+{
+  background-color:hsl(200, 60%, 99%);
+  color:hsl(227, 75%, 14%);
+  padding: 7px 15px;
+  border-radius: 17px;
+  border:1px solid hsl(226, 11%, 37%);
+  margin: 0px 5px;
+}
+
+.navi_light:focus , .navi_light:active
+{
+  outline: 2px solid hsl(3, 71%, 56%);
+  outline-offset: 1px;
+  color: white;
+}
+
+.navi_light:hover 
+{
+  background-color:hsl(3, 71%, 56%);
+  color: white;
+  border:1px solid hsl(3, 71%, 56%);
+}
+
+
+
+@media (max-width:740px) 
+{
+    html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Regular;
+  }
+
+  #root 
+  {
+    width: 100%;
+  }
+
+  .container {
+    width: 90%;
+    height: 95vh;
+    display: flex;
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+    flex-direction: column;
+    margin: 0 auto; /* center horizontally if needed */
+  }
+  nav 
+  {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  header 
+  {
+    width: 100;
+  }
+  section 
+  {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+  }
+  .content 
+  {
+    width: 100%;
+    height:180px;
+    padding: 20px;
+    border: 1px solid;
+  }
+  nav div:nth-child(2) 
+  {
+    padding-top: 20px;
+    flex: 1 1;
+    display: flex;
+    justify-content: center;
+  }
+  nav div:nth-child(2) .navi_dark
+  {
+    background-color: hsla(226, 11%, 37%, 0.5);
+    color: hsl(0, 0%, 93%);
+    padding: 10px 15px;
+    border-radius: 50px;
+    border:1px solid hsl(226, 11%, 37%);
+    margin: 0px 5px;
+    font-size: 20px;
+ }
+ .content_des p
+ {
+  font-size: 15px;
+ }
+ .remove_btn 
+ {
+  font-size: 15px;
+ }
+
+ .button-light 
+ {
+  font-size: 15px;
+ }
+ .navi_light 
+  {
+    background-color:hsl(200, 60%, 99%);
+    color:hsl(227, 75%, 14%);
+    padding: 10px 15px;
+    border-radius: 50px;
+    border:1px solid hsl(226, 11%, 37%);
+    margin: 0px 5px;
+    font-size: 20px;
+  }
+}
