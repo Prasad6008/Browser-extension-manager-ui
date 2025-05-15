@@ -379,7 +379,7 @@ section div
 
   .container {
     width: 90%;
-    height: 95vh;
+    height: 85vh;
     display: flex;
     overflow: scroll;
     scrollbar-width: none; /* Firefox */
